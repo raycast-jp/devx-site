@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+  <main class="hero">
+    <h1>devx.jp</h1>
+    <p>Coming soon.</p>
+  </main>
+</BaseLayout>
+
+<style>
+  .hero {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    margin: 0.5rem 0 0;
+    color: var(--color-muted);
+  }
+</style>
